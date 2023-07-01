@@ -22,4 +22,6 @@ public sealed class MenuSectionId : ValueObject
     {
         yield return Value;
     }
+
+    public static MenuSectionId Create(Guid value) => new MenuSectionId(value);
 }

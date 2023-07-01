@@ -16,6 +16,8 @@ public sealed class MenuReviewId : ValueObject
         Value = value;
     }
 
+    private MenuReviewId() { }
+
     public static MenuReviewId CreateUnique() => new MenuReviewId(Guid.NewGuid());
 
     public override IEnumerable<object> GetEqualityComponents()
